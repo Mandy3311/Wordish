@@ -1,0 +1,57 @@
+.title {
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+  margin: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.matrix-container {
+  margin: 20px;
+}
+
+td {
+  width: 78px;
+  height: 78px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 18px;
+}
+
+.new-guess {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+label {
+  font-size: 28px;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+input {
+  width: 210px;
+  font-size: 28px;
+}
+
+button {
+  font-size: 28px;
+  display: inline-block;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.grey {
+  background-color: grey;
+}

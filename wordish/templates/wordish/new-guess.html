@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wordish Game - game</title>
+    <link rel="stylesheet" href="/static/wordish/game.css" />
+  </head>
+
+  <body>
+    <div class="title" id="status">{{status}}</div>
+
+    <div class="matrix-container">
+      <table class="matrix">
+        <tbody>
+          <tr>
+            <td class="{{matrix.0.0.color}}" id="cell_0_0">
+              {{matrix.0.0.letter}}
+            </td>
+            <td class="{{matrix.0.1.color}}" id="cell_0_1">
+              {{matrix.0.1.letter}}
+            </td>
+            <td class="{{matrix.0.2.color}}" id="cell_0_2">
+              {{matrix.0.2.letter}}
+            </td>
+            <td class="{{matrix.0.3.color}}" id="cell_0_3">
+              {{matrix.0.3.letter}}
+            </td>
+            <td class="{{matrix.0.4.color}}" id="cell_0_4">
+              {{matrix.0.4.letter}}
+            </td>
+          </tr>
+          <tr>
+            <td class="{{matrix.1.0.color}}" id="cell_1_0">
+              {{matrix.1.0.letter}}
+            </td>
+            <td class="{{matrix.1.1.color}}" id="cell_1_1">
+              {{matrix.1.1.letter}}
+            </td>
+            <td class="{{matrix.1.2.color}}" id="cell_1_2">
+              {{matrix.1.2.letter}}
+            </td>
+            <td class="{{matrix.1.3.color}}" id="cell_1_3">
+              {{matrix.1.3.letter}}
+            </td>
+            <td class="{{matrix.1.4.color}}" id="cell_1_4">
+              {{matrix.1.4.letter}}
+            </td>
+          </tr>
+          <tr>
+            <td class="{{matrix.2.0.color}}" id="cell_2_0">
+              {{matrix.2.0.letter}}
+            </td>
+            <td class="{{matrix.2.1.color}}" id="cell_2_1">
+              {{matrix.2.1.letter}}
+            </td>
+            <td class="{{matrix.2.2.color}}" id="cell_2_2">
+              {{matrix.2.2.letter}}
+            </td>
+            <td class="{{matrix.2.3.color}}" id="cell_2_3">
+              {{matrix.2.3.letter}}
+            </td>
+            <td class="{{matrix.2.4.color}}" id="cell_2_4">
+              {{matrix.2.4.letter}}
+            </td>
+          </tr>
+          <tr>
+            <td class="{{matrix.3.0.color}}" id="cell_3_0">
+              {{matrix.3.0.letter}}
+            </td>
+            <td class="{{matrix.3.1.color}}" id="cell_3_1">
+              {{matrix.3.1.letter}}
+            </td>
+            <td class="{{matrix.3.2.color}}" id="cell_3_2">
+              {{matrix.3.2.letter}}
+            </td>
+            <td class="{{matrix.3.3.color}}" id="cell_3_3">
+              {{matrix.3.3.letter}}
+            </td>
+            <td class="{{matrix.3.4.color}}" id="cell_3_4">
+              {{matrix.3.4.letter}}
+            </td>
+          </tr>
+          <tr>
+            <td class="{{matrix.4.0.color}}" id="cell_4_0">
+              {{matrix.4.0.letter}}
+            </td>
+            <td class="{{matrix.4.1.color}}" id="cell_4_1">
+              {{matrix.4.1.letter}}
+            </td>
+            <td class="{{matrix.4.2.color}}" id="cell_4_2">
+              {{matrix.4.2.letter}}
+            </td>
+            <td class="{{matrix.4.3.color}}" id="cell_4_3">
+              {{matrix.4.3.letter}}
+            </td>
+            <td class="{{matrix.4.4.color}}" id="cell_4_4">
+              {{matrix.4.4.letter}}
+            </td>
+          </tr>
+          <tr>
+            <td class="{{matrix.5.0.color}}" id="cell_5_0">
+              {{matrix.5.0.letter}}
+            </td>
+            <td class="{{matrix.5.1.color}}" id="cell_5_1">
+              {{matrix.5.1.letter}}
+            </td>
+            <td class="{{matrix.5.2.color}}" id="cell_5_2">
+              {{matrix.5.2.letter}}
+            </td>
+            <td class="{{matrix.5.3.color}}" id="cell_5_3">
+              {{matrix.5.3.letter}}
+            </td>
+            <td class="{{matrix.5.4.color}}" id="cell_5_4">
+              {{matrix.5.4.letter}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <form class="new-guess" action="new-guess" method="POST">
+      <label for="guess_text">Guess:</label>
+      <input type="hidden" name="target" value="{{target}}" />
+      <input type="hidden" name="old_guesses" value="{{old_guesses}}" />
+      <input id="guess_text" type="text" name="new_guess" autofocus />
+      <button id="guess_button" type="submit">Submit</button>
+      {% csrf_token %}
+    </form>
+  </body>
+</html>
