@@ -3,11 +3,6 @@
 This is a project to develop a simplified Wordle-like game! It consists of three phases, each building upon the previous one to create a fully functional web-based word game.
 
 ## Phase 1: Front-End User Interface
-- Build the front-end user interface using HTML and CSS.
-- Utilize Git and GitHub for version control.
-- Create a visually appealing front-end.
-
-## Phase 1: Front-End User Interface
 In this phase, we focus on building the front-end user interface for the Wordish game. The primary goal is to create an appealing and responsive interface using HTML and CSS. This phase provides an introduction to version control with Git and GitHub.
 
 ### Key Objectives:
